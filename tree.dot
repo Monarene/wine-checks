@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Flavanoids <= 2.31\ngini = 0.65\nsamples = 87\nvalue = [53, 48, 32]\nclass = Class 1", fillcolor="#fdf8f3"] ;
+1 [label="Flavanoids <= 1.03\ngini = 0.49\nsamples = 50\nvalue = [0, 40, 32]\nclass = Class 2", fillcolor="#d7fae6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Ash <= 1.73\ngini = 0.07\nsamples = 19\nvalue = [0, 1, 28]\nclass = Class 3", fillcolor="#8640e6"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = Class 2", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 18\nvalue = [0, 0, 28]\nclass = Class 3", fillcolor="#8139e5"] ;
+2 -> 4 ;
+5 [label="Magnesium <= 97.5\ngini = 0.17\nsamples = 31\nvalue = [0, 39, 4]\nclass = Class 2", fillcolor="#4de88e"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 24\nvalue = [0, 33, 0]\nclass = Class 2", fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label="OD280/OD315 of diluted wines <= 1.57\ngini = 0.48\nsamples = 7\nvalue = [0, 6, 4]\nclass = Class 2", fillcolor="#bdf6d5"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3]\nclass = Class 3", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="Total phenols <= 2.42\ngini = 0.24\nsamples = 4\nvalue = [0, 6, 1]\nclass = Class 2", fillcolor="#5ae996"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 3\nvalue = [0, 6, 0]\nclass = Class 2", fillcolor="#39e581"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = Class 3", fillcolor="#8139e5"] ;
+9 -> 11 ;
+12 [label="Magnesium <= 88.5\ngini = 0.23\nsamples = 37\nvalue = [53, 8, 0]\nclass = Class 1", fillcolor="#e99457"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label="gini = 0.0\nsamples = 4\nvalue = [0, 7, 0]\nclass = Class 2", fillcolor="#39e581"] ;
+12 -> 13 ;
+14 [label="Flavanoids <= 4.41\ngini = 0.04\nsamples = 33\nvalue = [53, 1, 0]\nclass = Class 1", fillcolor="#e5833d"] ;
+12 -> 14 ;
+15 [label="gini = 0.0\nsamples = 32\nvalue = [53, 0, 0]\nclass = Class 1", fillcolor="#e58139"] ;
+14 -> 15 ;
+16 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = Class 2", fillcolor="#39e581"] ;
+14 -> 16 ;
+}
